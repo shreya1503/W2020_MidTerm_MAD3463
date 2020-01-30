@@ -39,8 +39,8 @@ public class LambtonStringTools
 
         char[] array = s.toCharArray();
         int count = 1;
-        int mostFrequent = 0;
-        char maxChar = 0;
+        int occour = 0;
+        char mostFrequent = 0;
         for(int i=1; i<array.length; i++)
         {
             if(array[i]==array[i-1])
@@ -49,20 +49,20 @@ public class LambtonStringTools
             }
             else
             {
-                if(count>mostFrequent)
+                if(count>occour)
                 {
-                        mostFrequent=count;
-                        maxChar=array[i-1];
+                        occour=count;
+                        mostFrequent=array[i-1];
                 }
                 count = 1;
             }
         }
-        if(count>mostFrequent){
-            mostFrequent=count;
-            maxChar=array[array.length-1];
+        if(count>occour){
+            occour=count;
+            mostFrequent=array[array.length-1];
         }
 
-        return String.valueOf(mostFrequent);
+        return String.valueOf(occour);
     }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
