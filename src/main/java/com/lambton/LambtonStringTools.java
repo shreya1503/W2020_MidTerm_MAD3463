@@ -40,6 +40,27 @@ public class LambtonStringTools
         int count = 1;
         int occour = 0;
         char mostFrequent = 0;
+        for(int i=1; i<array.length; i++)
+        {
+            if(array[i]==array[i-1])
+            {
+                count++;
+            }
+            else
+            {
+                if(count>occour)
+                {
+                        occour=count;
+                        mostFrequent=array[i-1];
+                }
+                count = 1;
+            }
+        }
+        if(count>occour)
+        {
+            occour=count;
+            mostFrequent=array[array.length-1];
+        }
 
         return null;
     }
