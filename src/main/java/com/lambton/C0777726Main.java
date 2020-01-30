@@ -13,7 +13,7 @@ public class C0777726Main {
 
     public static void main(String[] args) 
     {
-        System.out.println("\n--- Reverse Words");
+      /* System.out.println("\n--- Reverse Words");
         String[] rev1 = LambtonStringTools.reverse("Failure will never overtake me if my determination to succeed is strong enough");
         System.out.println("Input  : Failure will never overtake me if my determination to succeed is strong enough");
         System.out.println("Output : " + rev1);
@@ -27,28 +27,28 @@ public class C0777726Main {
             System.out.println("Output : " + rev1);
         }
         
-        System.out.println("\n--- Init");
+       System.out.println("\n--- Init");
         String init = LambtonStringTools.initials("pritesh kumar pAtEl");
         System.out.println("Input  : pritesh kumar pAtEl");
-        System.out.println("Output : " + init);
+        System.out.println("Output : " + init);*/
         
         System.out.println("\n--- Binary to Decimal");
-        int num = LambtonStringTools.binaryToDecimal("101010");
+        int num = LambtonStringTools.binaryToDecimal(Integer.parseInt("101010"));
         System.out.println("Input  : 101010");
         System.out.println("Output : " + num);
         
-        System.out.println("\n--- Most Frequent");
+        /*System.out.println("\n--- Most Frequent");
         String mostFrequent = LambtonStringTools.mostFrequent("pritesh kumar pAtEl");
         System.out.println("Input  : pritesh kumar pAtEl");
         System.out.println("Output : " + mostFrequent);
         mostFrequent = LambtonStringTools.mostFrequent("aassrrttggg desf tersgdv");
         System.out.println("Input  : aassrrttggg desf tersgdv");
-        System.out.println("Output : " + mostFrequent);
+        System.out.println("Output : " + mostFrequent);*/
         
-        System.out.println("\n--- Replace SubString");
+        /*System.out.println("\n--- Replace SubString");
         String newString = LambtonStringTools.replaceSubString("Lambton College in Toronto", "College", "University");
         System.out.println("Input  : Lambton College in Toronto");
-        System.out.println("Output : " + newString);
+        System.out.println("Output : " + newString);*/
     }
 }
 
