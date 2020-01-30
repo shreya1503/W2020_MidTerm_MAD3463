@@ -40,11 +40,23 @@ public class LambtonStringTools
     }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
-    public static int binaryToDecimal(String s) 
+    public static int binaryToDecimal(int num)
     {
-       return 0;
+
+        int a = num;
+        int decimal=0;
+        int i=1;
+        while(a != 0)
+        {
+            decimal = decimal+i*(a%2);
+            a = a/2;
+            i=i*10;
+        }
+
+        return decimal;
     }
-     
+       //return 0;
+
     //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
     public static String replaceSubString(String originalString, String findString, String newString) 
     {

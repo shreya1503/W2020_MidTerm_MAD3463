@@ -14,17 +14,17 @@ public class C0777726Main {
     public static void main(String[] args) 
     {
         System.out.println("\n--- Reverse Words");
-        String[] rev = LambtonStringTools.reverse("Failure will never overtake me if my determination to succeed is strong enough");
+        String[] rev1 = LambtonStringTools.reverse("Failure will never overtake me if my determination to succeed is strong enough");
         System.out.println("Input  : Failure will never overtake me if my determination to succeed is strong enough");
-        System.out.println("Output : " + rev);
+        System.out.println("Output : " + rev1);
 
-        rev = LambtonStringTools.reverse(null);
+        rev1 = LambtonStringTools.reverse(null);
         System.out.println("Input  : NULL");
-        if(rev == null)
+        if(rev1 == null)
         {
             System.out.println("Function returns NULL value");
         }else {
-            System.out.println("Output : " + rev);
+            System.out.println("Output : " + rev1);
         }
         
         System.out.println("\n--- Init");
@@ -33,9 +33,9 @@ public class C0777726Main {
         System.out.println("Output : " + init);
         
         System.out.println("\n--- Binary to Decimal");
-        int decimal = LambtonStringTools.binaryToDecimal("101010");
+        int num = LambtonStringTools.binaryToDecimal("101010");
         System.out.println("Input  : 101010");
-        System.out.println("Output : " + decimal);
+        System.out.println("Output : " + num);
         
         System.out.println("\n--- Most Frequent");
         String mostFrequent = LambtonStringTools.mostFrequent("pritesh kumar pAtEl");
