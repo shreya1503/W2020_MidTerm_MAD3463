@@ -29,7 +29,6 @@ public class LambtonStringTools
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s) 
     {
-
         return null;
     }
         
@@ -41,28 +40,8 @@ public class LambtonStringTools
         int count = 1;
         int occour = 0;
         char mostFrequent = 0;
-        for(int i=1; i<array.length; i++)
-        {
-            if(array[i]==array[i-1])
-            {
-                count++;
-            }
-            else
-            {
-                if(count>occour)
-                {
-                        occour=count;
-                        mostFrequent=array[i-1];
-                }
-                count = 1;
-            }
-        }
-        if(count>occour){
-            occour=count;
-            mostFrequent=array[array.length-1];
-        }
 
-        return String.valueOf(occour);
+        return null;
     }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
