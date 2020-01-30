@@ -36,14 +36,14 @@ public class C0777726Main {
         int num = LambtonStringTools.binaryToDecimal(Integer.parseInt("101010"));
         System.out.println("Input  : 101010");
         System.out.println("Output : " + num);
-        
-        /*System.out.println("\n--- Most Frequent");
+
+        System.out.println("\n--- Most Frequent");
         String mostFrequent = LambtonStringTools.mostFrequent("pritesh kumar pAtEl");
         System.out.println("Input  : pritesh kumar pAtEl");
         System.out.println("Output : " + mostFrequent);
         mostFrequent = LambtonStringTools.mostFrequent("aassrrttggg desf tersgdv");
         System.out.println("Input  : aassrrttggg desf tersgdv");
-        System.out.println("Output : " + mostFrequent);*/
+        System.out.println("Output : " + mostFrequent);
         
         /*System.out.println("\n--- Replace SubString");
         String newString = LambtonStringTools.replaceSubString("Lambton College in Toronto", "College", "University");

@@ -34,9 +34,35 @@ public class LambtonStringTools
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
-    public static String mostFrequent(String s) 
+    public static String mostFrequent(String s)
     {
-        return null;
+
+        char[] array = s.toCharArray();
+        int count = 1;
+        int mostFrequent = 0;
+        char maxChar = 0;
+        for(int i=1; i<array.length; i++)
+        {
+            if(array[i]==array[i-1])
+            {
+                count++;
+            }
+            else
+            {
+                if(count>mostFrequent)
+                {
+                        mostFrequent=count;
+                        maxChar=array[i-1];
+                }
+                count = 1;
+            }
+        }
+        if(count>mostFrequent){
+            mostFrequent=count;
+            maxChar=array[array.length-1];
+        }
+
+        return String.valueOf(mostFrequent);
     }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
